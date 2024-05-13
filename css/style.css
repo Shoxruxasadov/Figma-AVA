@@ -1,0 +1,1780 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+  border: 2px solid white;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+@media (max-width: 1120px) {
+  .container {
+    max-width: 920px;
+  }
+}
+@media (max-width: 980px) {
+  .container {
+    max-width: 780px;
+  }
+}
+@media (max-width: 780px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 580px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 380px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  font-family: "Oswald", sans-serif;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .left-head {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 50%;
+}
+header .container .left-head ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  list-style: none;
+}
+@media (max-width: 980px) {
+  header .container .left-head ul {
+    display: none;
+  }
+}
+header .container .left-head ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+}
+header .container button {
+  height: 52px;
+  width: 193px;
+  border-radius: 30px;
+  background: #0057ff;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+header .container button:active {
+  transform: scale(0.9);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 80px;
+}
+main section {
+  margin-bottom: 120px;
+}
+main section#home {
+  height: calc(100vh - 80px);
+  max-height: 1000px;
+}
+@media (max-width: 980px) {
+  main section#home {
+    height: auto;
+    max-height: none;
+  }
+}
+main section#home .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+@media (max-width: 980px) {
+  main section#home .container {
+    flex-direction: column-reverse;
+  }
+}
+main section#home .container .title {
+  height: auto;
+  min-width: 400px;
+}
+@media (max-width: 980px) {
+  main section#home .container .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main section#home .container .title h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #000;
+}
+@media (max-width: 980px) {
+  main section#home .container .title h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#home .container .title h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 480px) {
+  main section#home .container .title h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 400px) {
+  main section#home .container .title h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+main section#home .container .title p {
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+  color: #000;
+  margin: 52px 0 17px;
+}
+@media (max-width: 980px) {
+  main section#home .container .title p {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#home .container .title p {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 36px 0 16px;
+  }
+}
+@media (max-width: 480px) {
+  main section#home .container .title p {
+    font-size: 11.8px;
+    line-height: 20px;
+    margin: 28px 0 14px;
+  }
+}
+@media (max-width: 400px) {
+  main section#home .container .title p {
+    font-size: 10.6px;
+    line-height: 18px;
+    margin: 20px 0 12px;
+  }
+}
+main section#home .container .title .evaluation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 980px) {
+  main section#home .container .title .evaluation {
+    justify-content: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#home .container .title .evaluation {
+    transform: scale(0.95);
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 480px) {
+  main section#home .container .title .evaluation {
+    transform: scale(0.9);
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 400px) {
+  main section#home .container .title .evaluation {
+    transform: scale(0.85);
+    margin-bottom: 28px;
+  }
+}
+main section#home .container .title .evaluation div {
+  margin-left: 5px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+main section#home .container .title .evaluation div span {
+  margin-left: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#home .container .title .evaluation div .stars {
+  margin-right: 20px;
+}
+main section#home .container .title button {
+  height: 52px;
+  width: 176px;
+  border-radius: 30px;
+  background: #ffa332;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  transition: 0.15s;
+  cursor: pointer;
+}
+main section#home .container .title button:active {
+  transform: scale(0.9);
+}
+main section#home .container .image {
+  width: 100%;
+  max-width: 680px;
+}
+main section#home .container .image img {
+  width: 100%;
+}
+@media (max-width: 980px) {
+  main section#home .container .image {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+main section#about .container {
+  display: flex;
+  flex-direction: column;
+}
+main section#about .container h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #0057ff;
+  margin-bottom: 10px;
+}
+main section#about .container h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 980px) {
+  main section#about .container h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#about .container h2 {
+    font-size: 38px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 480px) {
+  main section#about .container h2 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 400px) {
+  main section#about .container h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+main section#about .container p {
+  font-family: "Roboto";
+  line-height: 26px;
+  text-align: center;
+  color: #000;
+  margin-top: 39px;
+}
+@media (max-width: 980px) {
+  main section#about .container p {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#about .container p {
+    font-size: 16px;
+    max-width: 400px;
+    margin: 39px auto 0;
+  }
+}
+@media (max-width: 480px) {
+  main section#about .container p {
+    font-size: 16px;
+    max-width: 350px;
+    margin: 39px auto 0;
+  }
+}
+@media (max-width: 400px) {
+  main section#about .container p {
+    font-size: 14px;
+    max-width: 300px;
+    margin: 39px auto 0;
+  }
+}
+main section#about .container img {
+  margin-top: 77px;
+}
+main section#about .container h3 {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#experience {
+  margin-top: 120px;
+}
+@media (max-width: 580px) {
+  main section#experience {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 480px) {
+  main section#experience {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 400px) {
+  main section#experience {
+    margin-top: 0;
+  }
+}
+main section#experience .container {
+  display: flex;
+  gap: 200px;
+}
+@media (max-width: 980px) {
+  main section#experience .container {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+main section#experience .container .read-three {
+  display: flex;
+  flex-direction: column;
+}
+main section#experience .container .read-three h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 980px) {
+  main section#experience .container .read-three h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#experience .container .read-three h1 {
+    font-size: 38px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 480px) {
+  main section#experience .container .read-three h1 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 400px) {
+  main section#experience .container .read-three h1 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+main section#experience .container .read-three p {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 26px;
+  color: #000000;
+  margin: 48px 0 35px;
+}
+@media (max-width: 980px) {
+  main section#experience .container .read-three p {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#experience .container .read-three p {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 480px) {
+  main section#experience .container .read-three p {
+    font-size: 15px;
+    max-width: 280px;
+    margin: 48px auto 35px;
+  }
+}
+@media (max-width: 400px) {
+  main section#experience .container .read-three p {
+    font-size: 14px;
+    max-width: 260px;
+    margin: 48px auto 35px;
+  }
+}
+main section#experience .container .read-three div {
+  display: flex;
+}
+@media (max-width: 980px) {
+  main section#experience .container .read-three div {
+    justify-content: center;
+  }
+}
+main section#experience .container .read-three div .support-three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 55%;
+}
+@media (max-width: 980px) {
+  main section#experience .container .read-three div .support-three {
+    width: 50%;
+    align-items: center;
+  }
+}
+main section#experience .container .read-three div .support-three h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 580px) {
+  main section#experience .container .read-three div .support-three h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  main section#experience .container .read-three div .support-three h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  main section#experience .container .read-three div .support-three h1 {
+    font-size: 18px;
+  }
+}
+main section#experience .container .read-three div .support-three p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 6px;
+}
+main section#experience .container .read-three div .marketing-three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45%;
+}
+@media (max-width: 980px) {
+  main section#experience .container .read-three div .marketing-three {
+    width: 50%;
+    align-items: center;
+  }
+}
+main section#experience .container .read-three div .marketing-three h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 580px) {
+  main section#experience .container .read-three div .marketing-three h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  main section#experience .container .read-three div .marketing-three h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  main section#experience .container .read-three div .marketing-three h1 {
+    font-size: 18px;
+  }
+}
+main section#experience .container .read-three div .marketing-three p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 6px;
+}
+main section#experience .container .read-three button {
+  height: 52px;
+  width: 140px;
+  border-radius: 30px;
+  border: none;
+  background: #0057ff;
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 9px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+main section#experience .container .read-three button:active {
+  transform: scale(0.9);
+}
+@media (max-width: 980px) {
+  main section#experience .container .read-three button {
+    margin: 9px auto 0;
+  }
+}
+main section#experience .container .message-three {
+  height: 865px;
+  width: 540px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+}
+@media (max-width: 980px) {
+  main section#experience .container .message-three {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 980px) {
+  main section#experience .container .message-three img {
+    width: 100%;
+  }
+}
+main section#experience .container .message-three div {
+  padding: 55px 40px;
+  display: flex;
+  flex-direction: column;
+}
+main section#experience .container .message-three div h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#experience .container .message-three div p {
+  font-family: "Roboto";
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  margin: 26px 0 17px;
+}
+main section#experience .container .message-three div .inne {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding: 0;
+}
+main section#experience .container .message-three div .inne input {
+  width: 50%;
+  height: 60px;
+  padding: 0 26px;
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  outline: none;
+}
+@media (max-width: 480px) {
+  main section#experience .container .message-three div .inne {
+    flex-direction: column;
+    gap: 32px;
+  }
+  main section#experience .container .message-three div .inne input {
+    width: 100%;
+  }
+}
+main section#experience .container .message-three div .mar {
+  margin: 32px 0;
+  height: 60px;
+}
+main section#experience .container .message-three div .heiz {
+  margin-bottom: 42px;
+  height: 140px;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 140px;
+  min-height: 140px;
+  padding: 26px !important;
+  font-family: "Roboto", sans-serif;
+}
+main section#experience .container .message-three div .input-subject {
+  outline: none;
+  width: 100%;
+  padding: 0 26px;
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+}
+main section#experience .container .message-three div button {
+  height: 52px;
+  width: 460px;
+  border: none;
+  border-radius: 30px;
+  background: #0057ff;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+main section#experience .container .message-three div button:active {
+  transform: scale(0.95);
+}
+@media (max-width: 980px) {
+  main section#experience .container .message-three div button {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  main section#experience .container .message-three div button {
+    width: 100%;
+  }
+}
+main section#trusted .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+}
+@media (max-width: 980px) {
+  main section#trusted .container {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+main section#trusted .container .image {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+@media (max-width: 980px) {
+  main section#trusted .container .image {
+    margin: 0 auto;
+  }
+}
+main section#trusted .container .image img {
+  width: 100%;
+}
+main section#trusted .container .content {
+  display: flex;
+  flex-direction: column;
+}
+main section#trusted .container .content h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 980px) {
+  main section#trusted .container .content h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#trusted .container .content h1 {
+    font-size: 38px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 480px) {
+  main section#trusted .container .content h1 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 400px) {
+  main section#trusted .container .content h1 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+main section#trusted .container .content p {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 26px;
+  color: #000000;
+  margin: 58px 0 48px;
+}
+@media (max-width: 980px) {
+  main section#trusted .container .content p {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#trusted .container .content p {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 480px) {
+  main section#trusted .container .content p {
+    font-size: 15px;
+    max-width: 280px;
+    margin: 48px auto 35px;
+  }
+}
+@media (max-width: 400px) {
+  main section#trusted .container .content p {
+    font-size: 14px;
+    max-width: 260px;
+    margin: 48px auto 35px;
+  }
+}
+main section#trusted .container .content .trasted-about {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 350px;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+}
+@media (max-width: 980px) {
+  main section#trusted .container .content .trasted-about {
+    width: 100%;
+  }
+}
+main section#trusted .container .content .trasted-about .support-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  padding: 0 35px 0 40px;
+}
+main section#trusted .container .content .trasted-about .support-about h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000000;
+}
+main section#trusted .container .content .trasted-about .support-about img {
+  cursor: pointer;
+}
+@media (max-width: 580px) {
+  main section#trusted .container .content .trasted-about .support-about {
+    padding: 0 30px 0 35px;
+  }
+  main section#trusted .container .content .trasted-about .support-about h1 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  main section#trusted .container .content .trasted-about .support-about {
+    padding: 0 25px 0 30px;
+  }
+  main section#trusted .container .content .trasted-about .support-about h1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  main section#trusted .container .content .trasted-about .support-about {
+    padding: 0 20px 0 25px;
+  }
+  main section#trusted .container .content .trasted-about .support-about h1 {
+    font-size: 13px;
+  }
+}
+main section#trusted .container .content .trasted-about .hosting-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  padding: 0 35px 0 40px;
+}
+main section#trusted .container .content .trasted-about .hosting-about h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000000;
+}
+main section#trusted .container .content .trasted-about .hosting-about img {
+  cursor: pointer;
+}
+@media (max-width: 580px) {
+  main section#trusted .container .content .trasted-about .hosting-about {
+    padding: 0 30px 0 35px;
+  }
+  main section#trusted .container .content .trasted-about .hosting-about h1 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  main section#trusted .container .content .trasted-about .hosting-about {
+    padding: 0 25px 0 30px;
+  }
+  main section#trusted .container .content .trasted-about .hosting-about h1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  main section#trusted .container .content .trasted-about .hosting-about {
+    padding: 0 20px 0 25px;
+  }
+  main section#trusted .container .content .trasted-about .hosting-about h1 {
+    font-size: 13px;
+  }
+}
+main section#trusted .container .content .trasted-about .questions-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  padding: 0 35px 0 40px;
+}
+main section#trusted .container .content .trasted-about .questions-about h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000000;
+}
+main section#trusted .container .content .trasted-about .questions-about img {
+  cursor: pointer;
+}
+@media (max-width: 580px) {
+  main section#trusted .container .content .trasted-about .questions-about {
+    padding: 0 30px 0 35px;
+  }
+  main section#trusted .container .content .trasted-about .questions-about h1 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  main section#trusted .container .content .trasted-about .questions-about {
+    padding: 0 25px 0 30px;
+  }
+  main section#trusted .container .content .trasted-about .questions-about h1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  main section#trusted .container .content .trasted-about .questions-about {
+    padding: 0 20px 0 25px;
+  }
+  main section#trusted .container .content .trasted-about .questions-about h1 {
+    font-size: 13px;
+  }
+}
+main section#trusted .container .content .trasted-about .policy-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  padding: 0 35px 0 40px;
+}
+main section#trusted .container .content .trasted-about .policy-about h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000000;
+}
+main section#trusted .container .content .trasted-about .policy-about img {
+  cursor: pointer;
+}
+@media (max-width: 580px) {
+  main section#trusted .container .content .trasted-about .policy-about {
+    padding: 0 30px 0 35px;
+  }
+  main section#trusted .container .content .trasted-about .policy-about h1 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  main section#trusted .container .content .trasted-about .policy-about {
+    padding: 0 25px 0 30px;
+  }
+  main section#trusted .container .content .trasted-about .policy-about h1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  main section#trusted .container .content .trasted-about .policy-about {
+    padding: 0 20px 0 25px;
+  }
+  main section#trusted .container .content .trasted-about .policy-about h1 {
+    font-size: 13px;
+  }
+}
+main section#marketing .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  gap: 100px;
+}
+@media (max-width: 980px) {
+  main section#marketing .container {
+    flex-direction: column;
+  }
+}
+main section#marketing .container .title {
+  margin-top: 120px;
+}
+main section#marketing .container .title h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#marketing .container .title h1 {
+    font-size: 38px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 480px) {
+  main section#marketing .container .title h1 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 400px) {
+  main section#marketing .container .title h1 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+main section#marketing .container .title p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin: 50px 0 45px 0;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title p {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  main section#marketing .container .title p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  main section#marketing .container .title p {
+    font-size: 13px;
+    max-width: 280px;
+    margin: 48px auto 35px;
+  }
+}
+@media (max-width: 400px) {
+  main section#marketing .container .title p {
+    font-size: 12px;
+    max-width: 260px;
+    margin: 48px auto 35px;
+  }
+}
+main section#marketing .container .title .content {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 580px) {
+  main section#marketing .container .title .content {
+    transform: scale(0.95);
+  }
+}
+@media (max-width: 480px) {
+  main section#marketing .container .title .content {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 400px) {
+  main section#marketing .container .title .content {
+    transform: scale(0.85);
+  }
+}
+main section#marketing .container .title .content .research {
+  display: flex;
+  flex-direction: column;
+}
+main section#marketing .container .title .content .research .rs-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Oswald";
+}
+main section#marketing .container .title .content .research .rs-con h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#marketing .container .title .content .research .rs-con h2 {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#marketing .container .title .content .research .rs-about {
+  height: 4px;
+  width: 540px;
+  position: relative;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title .content .research .rs-about {
+    width: 100%;
+  }
+}
+main section#marketing .container .title .content .research .rs-about .foiz {
+  width: 85%;
+  height: 4px;
+  background: #0057ff;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+}
+main section#marketing .container .title .content .research .rs-about .hr {
+  height: 4px;
+  width: 540px;
+  border-radius: 100px;
+  background: #ebebeb;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title .content .research .rs-about .hr {
+    width: 100%;
+  }
+}
+main section#marketing .container .title .content .education {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+main section#marketing .container .title .content .education .ec-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Oswald";
+}
+main section#marketing .container .title .content .education .ec-con h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#marketing .container .title .content .education .ec-con h2 {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#marketing .container .title .content .education .ec-about {
+  height: 4px;
+  width: 540px;
+  position: relative;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title .content .education .ec-about {
+    width: 100%;
+  }
+}
+main section#marketing .container .title .content .education .ec-about .foizec {
+  width: 65%;
+  height: 4px;
+  background: #b861ff;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+}
+main section#marketing .container .title .content .education .ec-about .hrec {
+  height: 4px;
+  width: 540px;
+  border-radius: 100px;
+  background: #ebebeb;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title .content .education .ec-about .hrec {
+    width: 100%;
+  }
+}
+main section#marketing .container .title .content .development {
+  display: flex;
+  flex-direction: column;
+}
+main section#marketing .container .title .content .development .dev-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Oswald";
+}
+main section#marketing .container .title .content .development .dev-con h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#marketing .container .title .content .development .dev-con h2 {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#marketing .container .title .content .development .dev-about {
+  height: 4px;
+  width: 540px;
+  position: relative;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title .content .development .dev-about {
+    width: 100%;
+  }
+}
+main section#marketing .container .title .content .development .dev-about .foizdev {
+  width: 72%;
+  height: 4px;
+  background: #ff8e32;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+}
+main section#marketing .container .title .content .development .dev-about .hrdev {
+  height: 4px;
+  width: 540px;
+  border-radius: 100px;
+  background: #ebebeb;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .title .content .development .dev-about .hrdev {
+    width: 100%;
+  }
+}
+main section#marketing .container .digital {
+  height: 710px;
+  width: 540px;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(83, 83, 83, 0.15);
+  border-radius: 15px;
+  position: relative;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .digital {
+    width: 100%;
+    height: auto;
+  }
+  main section#marketing .container .digital img {
+    width: 100%;
+  }
+}
+main section#marketing .container .digital .content {
+  padding: 30px 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 980px) {
+  main section#marketing .container .digital .content {
+    padding: 20px 80px 30px;
+  }
+}
+@media (max-width: 780px) {
+  main section#marketing .container .digital .content {
+    padding: 20px 70px 30px;
+  }
+}
+@media (max-width: 580px) {
+  main section#marketing .container .digital .content {
+    padding: 20px 60px 30px;
+  }
+}
+@media (max-width: 480px) {
+  main section#marketing .container .digital .content {
+    padding: 20px 50px 30px;
+  }
+}
+@media (max-width: 400px) {
+  main section#marketing .container .digital .content {
+    padding: 20px 40px 30px;
+  }
+}
+main section#marketing .container .digital .content h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+main section#marketing .container .digital .content h2 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin: 9px 0 30px;
+}
+main section#marketing .container .digital .content .fontp {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: start;
+  gap: 18px;
+}
+main section#marketing .container .digital .content .fontp p {
+  font-family: "Oswald";
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#marketing .container .digital .content button {
+  height: 52px;
+  width: 137px;
+  border: none;
+  border-radius: 30px;
+  background: #0057ff;
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 40px auto 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+main section#marketing .container .digital .content button:active {
+  transform: scale(0.9);
+}
+main section#team .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 100px auto 40px;
+}
+main section#team .container .about-child {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+}
+@media (max-width: 980px) {
+  main section#team .container .about-child {
+    flex-direction: column;
+  }
+}
+main section#team .container .about-child .next-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 48px;
+  left: 98.5%;
+  right: -2.5%;
+  top: 170px;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  transition: 0.2s;
+}
+main section#team .container .about-child .next-child:active {
+  transform: scale(0.9);
+}
+@media (max-width: 980px) {
+  main section#team .container .about-child .next-child {
+    display: none;
+  }
+}
+main section#team .container .about-child .first-child,
+main section#team .container .about-child .second-child,
+main section#team .container .about-child .third-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 380px;
+  height: 346px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  padding: 45px 46px 41px;
+  margin-bottom: 51px;
+}
+@media (max-width: 980px) {
+  main section#team .container .about-child .first-child,
+  main section#team .container .about-child .second-child,
+  main section#team .container .about-child .third-child {
+    margin: 0 auto 40px;
+  }
+}
+main section#team .container .about-child .first-child p,
+main section#team .container .about-child .second-child p,
+main section#team .container .about-child .third-child p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 6px;
+}
+main section#team .container .about-child .first-child h1,
+main section#team .container .about-child .second-child h1,
+main section#team .container .about-child .third-child h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 20px;
+}
+main section#team .container .about-child .first-child h2,
+main section#team .container .about-child .second-child h2,
+main section#team .container .about-child .third-child h2 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10px;
+}
+main section#team .container .about-child .first-child .star,
+main section#team .container .about-child .second-child .star,
+main section#team .container .about-child .third-child .star {
+  display: flex;
+  flex-direction: row;
+}
+main section#team .container .circle-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 48px;
+  height: 8px;
+  margin: 0 auto;
+}
+@media (max-width: 980px) {
+  main section#team .container .circle-two {
+    display: none;
+  }
+}
+main section#team .container .circle-two .first-circle-full {
+  width: 8px;
+  height: 8px;
+  background: #222;
+  border-radius: 4px;
+}
+main section#team .container .circle-two .second-circle {
+  width: 8px;
+  height: 8px;
+  background: rgba(34, 34, 34, 0.4);
+  border-radius: 4px;
+}
+main section#meet {
+  background: url(../img/main/section-seven/back.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+main section#meet .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  margin: 0 auto;
+}
+main section#meet .container h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #0057ff;
+  margin-top: 132px;
+}
+main section#meet .container p {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #000000;
+  margin-top: 23px;
+  margin-bottom: 50px;
+}
+main section#meet .container button {
+  height: 52px;
+  width: 161px;
+  border: none;
+  border-radius: 30px;
+  background: #0057ff;
+  font-family: "Oswald";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+main section#meet .container button:active {
+  transform: scale(0.9);
+}
+main section#collaborations div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+main section#collaborations div img {
+  margin: 40px 0;
+}
+main section#collaborations .line {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: #e7e7e7;
+}
+main section#news .container h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #0057ff;
+}
+main section#news .container h2 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 4px 0 66px;
+}
+main section#news .container .wrapper {
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 980px) {
+  main section#news .container .wrapper {
+    flex-direction: column;
+    max-height: none;
+  }
+}
+main section#news .container .wrapper .content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 50%;
+}
+@media (max-width: 980px) {
+  main section#news .container .wrapper .content {
+    width: 100%;
+  }
+}
+main section#news .container .wrapper .content .box {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  height: 50%;
+  padding: 21px;
+  background: #ffffff;
+  border: 1px solid #d9dcec;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 580px) {
+  main section#news .container .wrapper .content .box {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+main section#news .container .wrapper .content .box .title h3 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #0057ff;
+  margin-top: 20px;
+}
+main section#news .container .wrapper .content .box .title h4 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#news .container .wrapper .content .box .title p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 24px;
+}
+main section#news .container .wrapper .content .box-bottom {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  height: 50%;
+  padding: 21px;
+  background: #ffffff;
+  border: 1px solid #d9dcec;
+  border-radius: 10px;
+}
+main section#news .container .wrapper .content .box-bottom .box-bottom-con h3 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #0057ff;
+  margin-top: 35px;
+}
+main section#news .container .wrapper .content .box-bottom .box-bottom-con h4 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#news .container .wrapper .content .box-bottom .box-bottom-con p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 24px;
+}
+main section#news .container .wrapper .box-right {
+  width: 50%;
+  padding: 21px;
+  background: #ffffff;
+  border: 1px solid #d9dcec;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 980px) {
+  main section#news .container .wrapper .box-right {
+    width: 100%;
+  }
+}
+main section#news .container .wrapper .box-right img {
+  width: 100%;
+  height: 100%;
+}
+main section#news .container .wrapper .box-right div {
+  position: absolute;
+  left: 51px;
+  bottom: 56px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  color: #000000;
+}
+main section#news .container .wrapper .box-right div h5 {
+  font-weight: 400;
+  font-size: 11px;
+  color: #0057ff;
+}
+main section#news .container .wrapper .box-right div h6 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+}
+
+footer {
+  width: 100%;
+  background: #000;
+  font-family: "Oswald", sans-serif;
+  padding: 70px 0 30px;
+  overflow: hidden;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 980px) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+}
+footer .container .left-footer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 64px;
+  align-items: start;
+}
+@media (max-width: 980px) {
+  footer .container .left-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+}
+footer .container .left-footer .left-bottom-footer {
+  text-decoration: none;
+  display: flex;
+}
+footer .container .left-footer .left-bottom-footer .sp-de {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+footer .container .left-footer .left-bottom-footer .sp-by {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  white-space: nowrap;
+}
+footer .container .left-footer .left-bottom-footer .sp-and {
+  margin: 0 8px;
+  font-size: 12px;
+  color: #d7d5ff;
+  white-space: nowrap;
+}
+footer .container .right-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 70%;
+}
+@media (max-width: 980px) {
+  footer .container .right-footer {
+    width: 100%;
+  }
+}
+footer .container .right-footer .list-footer {
+  display: flex;
+  font-family: "Oswald";
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  list-style: none;
+  gap: 20px;
+}
+@media (max-width: 980px) {
+  footer .container .right-footer .list-footer {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  footer .container .right-footer .list-footer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+footer .container .right-footer .list-footer li {
+  cursor: pointer;
+  color: #ffffff;
+  white-space: nowrap;
+  text-align: center;
+}
+@media (max-width: 980px) {
+  footer .container .right-footer .social-footer {
+    margin: 32px auto 0;
+  }
+}/*# sourceMappingURL=style.css.map */
